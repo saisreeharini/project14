@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forms</title>
+</head>
+<style>
+	table
+	{
+		background-color: cyan;
+		padding: 2px 2px 2px;
+	}
+</style>
+<body>
+	<form>
+		<table border="1px" cellspacing="1px">
+			<tr>
+				<td><label>name:</label></td>
+				<td><input type="text"/></td>
+			</tr>
+			<tr>
+				<td><label>email:</label></td>
+				<td><textarea cols="50"></textarea></td>
+			</tr>
+			<tr>
+				<td><label>password:</label></td>
+				<td><input type="text"/></td>
+			</tr>
+			<tr>
+				<td><label>approval required:</label>click on the button or text to<br>check/uncheck.</td>
+				<td><input type="checkbox"/>do you approve</td>
+			</tr>
+			<tr>
+				<td><label>pick your favourite:</label>click on the button or text to<br>select.</td>
+				<td><input type="radio" name="A">choice A</type>
+					<br>
+					<input type="radio" name="B">choice B</type>
+					<br>
+					<input type="radio" name="C">choice C</type>
+				</td>
+			</tr>
+			<tr>
+				<td><label>popup menu:</label></td>
+				<td width="5px"><select>
+					<option>Texas--TX</option>
+					<option>banglore</option>
+					<option>mumbai</option>
+					<option>pune</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label>list setup options:
+				<ul type="disc">
+			<li>number of rows to display</li>
+			<li>allow multi-select</li>
+			<td><textarea rows="6" cols=""></textarea></td>
+
+		</tr>
+		<tr>
+			<td><label>field ignored by km</label></td>
+			<td><input type="text"/></td>
+		</tr>
+		<tr>
+			<td><label>textarea</label>
+			<td><textarea rows="2" cols="100px"></textarea></td>
+			<tr>
+				<td colspan="2" align="center">
+				<input type="submit"/>
+				<input type="reset"/>
+				<button>cancel</button>
+			</td>
+		</tr>
+	</form>
+</table>
+</body>
+</html>

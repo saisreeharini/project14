@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css translate</title>
+<style>
+	div
+	{
+		box-shadow: 0 0 10px black;
+		width: 300px;
+		height: 300px;
+		margin: 100px auto;
+		overflow: hidden;
+		position: relative;
+	}
+	div:hover
+	{
+		cursor: pointer;
+	}
+	div>img
+	{
+		width: inherit;
+		height: inherit;
+		transition: all 1s linear os;
+	}
+	div:hover>img
+	{
+		transform: translateY(-100px); 
+	}
+	div>#price
+	{
+		background-color: lawngreen;
+		position: absolute;
+		top: 200px;
+		left: 0px;
+		height: 100px;
+		color: white;
+		transition: all 1s linear os;
+	}
+	div:hover>#price
+	{
+		transform: translateY(-100px);
+	}
+</style>
+</head>
+<body>
+	<div>
+		<img src="{% static 'images\kannaya.jpg' %}">
+		<div id="price">
+			<ol>
+				<li>sai</li>
+				<li>100000</li>
+				<li>beem</li>
+			</ol>
+		</div>
+	</div>
+</body>
+</html>

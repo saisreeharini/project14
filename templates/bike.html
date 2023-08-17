@@ -1,0 +1,56 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Transforms</title>
+    <link rel="stylesheet" href="{% static 'css/apuramma' %}">
+	<style>
+		div
+		{
+			background-color: blue;
+			width: 350px;
+			height: 250px;
+			margin: 100px auto;
+			border: 2px solid orange;
+			overflow: hidden;
+
+			position: relative;
+		}
+		div>img
+		{
+			width: inherit;
+			height: inherit;
+		}
+		div:hover
+		{
+			cursor: pointer;
+		}
+		div>#wrapper
+		{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			margin: 0px;
+			background-color: rgba(255,161,66, 0, 4);
+			transform: translatey(100%);
+			transition: all 1s linear 0s;
+		}
+		div:hover>#wrapper
+		{
+			transform: translateY(0%);
+		}
+		#wrapper>h1
+		{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="{% static 'images/amma.JPG' %} ">
+		<div id="wrapper">
+			<h1>apurammathalli </h1>
+		</div>
+	</div>
+</body>
+</html>
